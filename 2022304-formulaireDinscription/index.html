@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire d'abonnement</title>
+</head>
+<body>
+    <h1>Formulaire d'abonnement</h1>
+
+    <form action="" method="get">
+        <div class="formulaire">
+            <div class="info">
+                <label for="name">Nom:</label>
+                <input type="text"id="name" name="name" minlength="3" required autofocus>
+            </div>
+
+            <div class="info">
+                <label for="first_name">Prénom:</label>
+                <input type="text"id="first_name" name="first_name" minlength="3" required>
+            </div>
+
+            <div class="info">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="example@email.com" 
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            </div>
+
+            <div class="info_birthday">
+                <label for="birthday">Date de naissance:</label>
+                <input type="date" name="birthday" id="birthday" placeholder="YYYY-MM-DD" data-date-split-input="true">
+            </div>
+
+            <p>Choisissez votre abonnement:</p>
+            <div class="subscrip">                
+                <div>
+                    <input type="radio" name="subscription" id="subscription1">
+                    <label for="subscription1">annuel</label>
+                </div>
+                <div>
+                    <input type="radio" name="subscription" id="subscription2">
+                    <label for="subscription2">mensuel</label>
+                </div>
+                <div>
+                    <input type="radio" name="subscription" id="subscription3">
+                    <label for="subscription3">hebdomadaire</label>
+                </div>
+                <div>
+                    <input type="radio" name="subscription" id="subscription4" checked>
+                    <label for="subscription4">pay per view</label>
+                </div>
+            </div>
+
+            <div class="form_check">
+                <input type="checkbox" id="condition" name="condition" value="newsletter" required>
+                <label for="condition">J'accepte les conditions générale de vente</label>
+            </div>
+
+            <div class="form_check">
+                <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+                <label for="subscribeNews">Souhaitez-vous vous abonner à la newsletter ?</label>
+            </div>
+
+            <div class="btn">
+                <button type="submit">S'abonner</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

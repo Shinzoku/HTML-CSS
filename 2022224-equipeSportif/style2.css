@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url(./Images/pelouse1.jpg);
+    margin: 0;
+}
+
+.bigtitle {
+    display: grid;
+    justify-items: center;
+}
+
+h1{
+    padding: 3px 6px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border: 3px solid blue;
+    width: 25%;
+    color: white;
+    grid-column: 1;
+    text-align: center;
+}
+
+.card {
+    border: 7px double blue;
+    padding: 0px 6px 6px 6px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(151, 151, 151);
+    width: 380px;
+}
+
+.portrait {
+    align-self: center;
+}
+
+.cardtitle{
+    text-align: center;
+    color: white;
+}
+
+.cardinfo {
+    display: block;
+}
+
+.cardcat {
+    font-weight: bold;
+    color: rgb(171, 211, 245);
+}
+
+.biographie {
+    width: 70%;
+}
+
+p {
+    text-align: justify;
+    color: white;
+    margin: 5px;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 50% 50%;
+    margin-bottom: 80px;
+}
+
+.sectionpage1 {
+    grid-column: 1;
+    display: grid;
+    justify-items: center;
+}
+
+.sectionpage2 {
+    grid-column: 2;
+    display: grid;
+    justify-items: center;
+}
+
+.plusinfo {
+    margin-top: 20px;
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.plusinfo a {
+    color: rgb(171, 211, 245);
+    font-weight: bold;
+    text-decoration: none;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.plusinfo a:hover {
+    color: red;
+}
+
+.retour {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
+}
+
+button {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 4px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+footer {
+    height: 100px;
+    background-color: black;
+    
+}
+
+@media (max-width: 900px) {
+
+    .page {
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 30% 63% 2% 5%;
+    }
+
+    h1 {
+        width: 83%;
+        font-size: 1.5rem;
+    }
+
+    .sectionpage1 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .sectionpage2 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .card {
+        max-width: 285px;
+    }
+
+    .biographie {
+        min-width: 100%;
+    }
+
+    .retour {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .plusinfo {
+        grid-column: 2;
+        grid-row: 3;
+        font-size: 1rem;
+    }
+
+    .sectiontitle {
+        font-size: 1rem;
+    }
+}

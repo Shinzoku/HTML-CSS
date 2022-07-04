@@ -1,0 +1,207 @@
+body {
+    background-image: url(./Images/pelouse1.jpg);
+    margin: 0;
+}
+
+.cardinfo {
+    display: block;
+}
+
+.cardcat {
+    font-weight: bold;
+    color: rgb(171, 211, 245);
+}
+
+.card {
+    border: 7px double blue;
+    width: 380px;
+    padding: 0px 6px 6px 6px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(151, 151, 151);
+}
+
+.portrait {
+    align-self: center;
+}
+
+.page {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sectionpage {
+    display: flex;
+    padding: 3px;
+}
+
+.cardtitle{
+    text-align: center;
+    color: white;
+}
+
+.bigtitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+    padding: 3px 6px;
+    margin-bottom: 30px;
+    border: 3px solid blue;
+    width: 500px;
+    color: white;
+}
+
+h1, .cardtitle, .cardstaff {
+    background-color: rgb(133, 231, 255);
+}
+
+p {
+    text-align: justify;
+    color: white;
+}
+
+.plusinfo {
+    margin-top: 20px;
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.plusinfo a {
+    color: rgb(171, 211, 245);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.plusinfo a:hover {
+    color: red;
+}
+
+.biographie {
+    width: 700px;
+}
+
+.card img {
+    width: 200px;
+}
+
+.retour {
+    display: flex;
+    justify-content: flex-end
+}
+
+button {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 4px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+footer {
+    height: 100px;
+    background-color: black;
+}
+
+/*---------------------Index.HTML------------------------*/
+.cardstaff {
+    border: 2px solid blue;
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section img {
+    max-width: 100%;
+}
+
+.cardstaff img {
+    max-width: 100%;
+    display: block;
+}
+
+h4 {
+    text-align: center;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.link:hover {
+    color: blue;
+}
+
+.divstaff {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sectiontitle {
+    color: white;
+    text-align: center;
+}
+
+.sectiontitle + img {
+    display: block;
+    align-self: center;
+}
+
+.blocktitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.blocktitle img:nth-last-child(1) {
+    width: 1000px;
+}
+
+@media (max-width: 900px) {
+    .page {
+        flex-direction: column;
+    }
+
+    .biographie {
+        max-width: 500px;
+    }
+
+    .sectionpage {
+        justify-content: center;
+    }
+
+    .cardstaff {
+        max-width: 150px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .sectiontitle {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 0.5rem;
+    }
+}

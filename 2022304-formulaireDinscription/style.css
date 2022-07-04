@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: dashed;
+    margin: 2%;
+    font-size: 3.5rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(255, 158, 32);
+    border-radius: 20px;
+    padding: 2%;
+    width: 34%;
+    line-height: 3.5rem;
+    background-color: rgb(253, 222, 182);
+}
+
+label, p, div.info input, div.info_birthday input, div.btn button {
+    font-size: 1.5rem;
+}
+
+div.info, div.info_birthday {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+div.info input {
+    height: 2.5rem;
+    width: 70%;
+    border-radius: 12px;
+    border: 2px solid rgb(255, 185, 95);
+    padding: 0 20px;
+}
+
+div.info_birthday input {
+    height: 2.5rem;
+    width: 60%;
+    border-radius: 12px;
+    border: 2px solid rgb(255, 185, 95);
+    text-align: center;
+}
+
+p {
+    height: 2.2rem;
+}
+
+div.subscrip {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.btn {
+    text-align: end;
+}
+
+div.btn button {
+    color: white;
+    background-color: rgb(255, 185, 95);
+    border: 2px solid rgb(255, 185, 95);
+    border-radius: 7px;
+    height: 3rem;
+    width: 8.5rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+div.btn button:hover {
+    color: rgb(255, 185, 95);
+    background-color: rgba(255, 255, 255, 0.6);
+    order: 2px solid rgb(255, 185, 95);
+}
+
+@media (min-width: 751px) and (max-width: 1400px) {
+    h1 {
+        font-size: 2rem;
+        margin: 4%;
+    }
+
+    .formulaire {
+        width: 50%;
+        padding: 2%;
+    }
+
+    label, p, div.info input, div.info_birthday input, div.btn button {
+        font-size: 1.3rem;
+    }
+
+    div.info input {
+        height: 2.2rem;
+        width: 68%;
+        border-radius: 10px;
+        padding: 0 20px;
+        align-self: center;
+    }
+
+    div.info_birthday input {
+        height: 2.2rem;
+        width: 55%;
+        border-radius: 10px;
+        align-self: center;
+    }
+
+    div.subscrip {
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+    }
+
+    div.subscrip div {
+        display: flex;
+        align-items: center;
+    }
+
+    div.subscrip div label, div.form_check label {
+        margin-left: 3%;
+        height: 166%;
+    }
+
+    div.subscrip div, div.form_check {
+        height: 2.2rem;
+    }
+
+    div.form_check {
+        display: flex;
+        align-items: center;
+    }
+
+    div.form_check label{
+        font-size: 1.2rem;
+    }
+
+    div.btn button {
+        height: 2.5rem;
+        width: 8rem;
+    }
+}
+
+@media (max-width: 750px) {
+    h1 {
+        font-size: 1.5rem;
+        margin: 5.3%;
+    }
+
+    .formulaire {
+        width: 90%;
+        padding: 3.2%;
+    }
+
+    label, p, div.info input, div.info_birthday input, div.btn button {
+        font-size: 1rem;
+    }
+
+    div.info input {
+        height: 2rem;
+        width: 60%;
+        border-radius: 8px;
+        padding: 0 20px;
+        align-self: center;
+    }
+
+    div.info_birthday input {
+        height: 2rem;
+        width: 45%;
+        border-radius: 8px;
+        align-self: center;
+    }
+
+    div.info_birthday label {
+        font-size: 0.9rem;
+    }
+
+    div.subscrip {
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+    }
+
+    div.subscrip div {
+        display: flex;
+        align-items: center;
+    }
+
+    div.subscrip div label, div.form_check label {
+        margin-left: 3%;
+    }
+
+    div.subscrip div, div.form_check {
+        height: 2rem;
+    }
+
+    div.form_check {
+        display: flex;
+        align-items: center;
+    }
+
+    div.form_check label{
+        font-size: 0.8rem;
+    }
+
+    div.btn button {
+        height: 2.2rem;
+        width: 6rem;
+    }
+}

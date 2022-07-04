@@ -1,0 +1,53 @@
+.card {
+    border-radius: 20px;
+}
+
+.card-img-top {
+    border-radius:20px 20px 0 0 ;
+    height: 320px;
+}
+
+div.raw div.border button.rounded-circle {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+div.raw div.border button.rounded-circle:hover {
+    background-color: rgb(221, 221, 221);
+    border: 1px solid rgb(221, 221, 221);
+}
+
+img.rounded-circle {
+    bottom: 505px;
+    left: 650px;
+    width: 150px;
+    z-index: 2;
+    border: 5px solid white;
+}
+
+h1 {
+    margin-top: 70px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.toto {
+    margin-left: 10px;
+}
+
+button.btn-info {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+button .arrow-return {
+    width: 15px;
+}
+
+button.btn-dark {
+    border-radius: 20px;
+    bottom: 530px;
+    left: 1130px;
+    z-index: 2;
+}
